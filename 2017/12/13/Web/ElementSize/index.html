@@ -18,7 +18,7 @@
 <meta property="og:description" content="get elements size엘리먼트 사이즈 구하는 방법 offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHe">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://diajavascript.github.io/images/width.png">
-<meta property="og:updated_time" content="2017-12-13T08:44:41.370Z">
+<meta property="og:updated_time" content="2017-12-14T12:00:51.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elements Size">
 <meta name="twitter:description" content="get elements size엘리먼트 사이즈 구하는 방법 offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHe">
@@ -172,10 +172,10 @@
 <p><em>offsetWidth / offsetHeight</em><br>일반적으로 엘리먼트의 전체 크기를 가져옴.<br>해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함</p>
 <p><em>clientWidth / clientHeight</em><br>실제로 보여지고 있는 컨텐츠가 얼마만큼 공간을 차지하고 있는지 확인하고 싶다면 해당 속성을 사용할 것<br>이 속성은 border와 scrollbar 크기를 제외한 실제컨텐츠 크기를 리턴함 (padding은 포함)</p>
 <p><img src="/images/width.png" alt=""></p>
-<p>scrollWidth, scrollHeight</p>
+<p><em>scrollWidth, scrollHeight</em></p>
 <p>만약, 보이는 것과 상관 없이 실제 컨텐츠 영역이 얼마만큼의 크기를 갖고 있는지 확인하고 싶다면,<br><code>scrollWidth</code>와 <code>scrollHeight</code> 속성을 확인하면 된다.</p>
 <p>이 속성은 전체 스크롤바를 사용하게 되어 숨겨진 영역까지 포함한 크기를 리턴한다.</p>
-<p>getBoundingClientRect()</p>
+<p><em>getBoundingClientRect()</em></p>
 <p>대부분의 경우엔 <code>getBoundingClientRect()</code>은 <code>offsetWidth</code>, <code>offsetHeight</code>와 거의 같은 값을 리턴한다.<br>하지만, <code>transform</code>이 적용되어 있다면 조금 달라진다.</p>
 <p><code>offsetWidth</code>와 <code>offsetHeight</code> 속성은 엘리먼트의 레이아웃 크기를 리턴하는 반면,<br><code>getBoundingClientRect()</code>는 렌더링된 크기를 리턴한다.</p>
 <p>예를 들어, 엘리먼트에 다음과 같은 속성이 적용되어 있다고 가정해보자.</p>
