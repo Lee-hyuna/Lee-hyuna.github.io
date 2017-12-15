@@ -9,19 +9,19 @@
     
         <meta name="keywords" content="web,element,width" />
     
-    <meta name="description" content="get elements size엘리먼트 사이즈 구하는 방법 offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHe">
+    <meta name="description" content="get elements size엘리먼트 사이즈 구하는 방법offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHei">
 <meta name="keywords" content="web,element,width">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Elements Size">
 <meta property="og:url" content="http://diaJavascript.github.io/2017/12/13/Web/ElementSize/index.html">
 <meta property="og:site_name" content="Writer, Javascript Blog">
-<meta property="og:description" content="get elements size엘리먼트 사이즈 구하는 방법 offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHe">
+<meta property="og:description" content="get elements size엘리먼트 사이즈 구하는 방법offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHei">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://diajavascript.github.io/images/width.png">
-<meta property="og:updated_time" content="2017-12-15T05:49:48.859Z">
+<meta property="og:updated_time" content="2017-12-15T05:54:05.266Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elements Size">
-<meta name="twitter:description" content="get elements size엘리먼트 사이즈 구하는 방법 offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHe">
+<meta name="twitter:description" content="get elements size엘리먼트 사이즈 구하는 방법offsetWidth / clientWidth / scrollWidth .. offsetWidth / offsetHeight일반적으로 엘리먼트의 전체 크기를 가져옴.해당 속성은 엘리먼트의 padding, border, scrollbar 를 포함한 값을 리턴함 clientWidth / clientHei">
 <meta name="twitter:image" content="http://diajavascript.github.io/images/width.png">
     
 
@@ -167,8 +167,7 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="get-elements-size"><a href="#get-elements-size" class="headerlink" title="get elements size"></a>get elements size</h1><p>엘리먼트 사이즈 구하는 방법</p>
-<p>offsetWidth / clientWidth / scrollWidth ..</p>
+            <h1 id="get-elements-size"><a href="#get-elements-size" class="headerlink" title="get elements size"></a>get elements size</h1><p>엘리먼트 사이즈 구하는 방법<br>offsetWidth / clientWidth / scrollWidth ..</p>
 <h2 id="offsetWidth-offsetHeight"><a href="#offsetWidth-offsetHeight" class="headerlink" title="offsetWidth / offsetHeight"></a>offsetWidth / offsetHeight</h2><p>일반적으로 엘리먼트의 전체 크기를 가져옴.<br>해당 속성은 엘리먼트의 <code>padding</code>, <code>border</code>, <code>scrollbar</code> 를 포함한 값을 리턴함</p>
 <h2 id="clientWidth-clientHeight"><a href="#clientWidth-clientHeight" class="headerlink" title="clientWidth / clientHeight"></a>clientWidth / clientHeight</h2><p>실제로 보여지고 있는 컨텐츠가 얼마만큼 공간을 차지하고 있는지 확인하고 싶다면 해당 속성을 사용할 것<br>이 속성은 <code>border</code>와 <code>scrollbar</code> 크기를 제외한 실제컨텐츠 크기를 리턴함 (padding은 포함)</p>
 <p><img src="/images/width.png" alt=""></p>
@@ -177,9 +176,8 @@
 <h2 id="getBoundingClientRect"><a href="#getBoundingClientRect" class="headerlink" title="getBoundingClientRect()"></a>getBoundingClientRect()</h2><p>대부분의 경우엔 <code>getBoundingClientRect()</code>은 <code>offsetWidth</code>, <code>offsetHeight</code>와 거의 같은 값을 리턴한다.<br>하지만, <code>transform</code>이 적용되어 있다면 조금 달라진다.</p>
 <p><code>offsetWidth</code>와 <code>offsetHeight</code> 속성은 엘리먼트의 레이아웃 크기를 리턴하는 반면,<br><code>getBoundingClientRect()</code>는 렌더링된 크기를 리턴한다.</p>
 <p>예를 들어, 엘리먼트에 다음과 같은 속성이 적용되어 있다고 가정해보자.</p>
-<pre><code>width: 100px;
-transform: scale(0.5);
-</code></pre><p>이 경우, <code>offsetWidth</code>는 100을 리턴하지만, <code>getBoundingClientRect()</code>는 50을 리턴한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">width: 100px;</div><div class="line">transform: scale(0.5);</div></pre></td></tr></table></figure>
+<p>이 경우, <code>offsetWidth</code>는 100을 리턴하지만, <code>getBoundingClientRect()</code>는 50을 리턴한다.</p>
 <p><code>offsetWidth</code> 뿐 아니라, 위에서 언급한, <code>clientWidth</code>, <code>scrollWidth</code> 모두 tranform에 의해 변경된 값은 적용되지 않는다.<br>따라서, 최종 렌더링된 값을 가져오고 싶다면, <code>offsetWidth</code> 대신 <code>getBoundingClientRect()</code>를 사용하는 것이 좋다.</p>
 
         </div>
