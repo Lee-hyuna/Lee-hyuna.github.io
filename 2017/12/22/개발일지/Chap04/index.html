@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Chaining | Writer, Javascript Blog</title>
+    <title>Chap03. 개발일지 - preload | Writer, Javascript Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="Javascript" />
+        <meta name="keywords" content="개발일지" />
     
-    <meta name="description" content="정리할예정.참고 :http://blog.saltfactory.net/javascript-method-chaining-pattern/">
-<meta name="keywords" content="Javascript">
+    <meta name="description" content="관련문서 : http://zuu.kr/jank 웹폰트 관련 문서를 보다 preload에 대한 정리가 있으면 좋을 것 같아서 남긴다 :^) Function API12345678&amp;lt;head&amp;gt;...&amp;lt;script id=&amp;quot;loadcss&amp;quot;&amp;gt;  // load a CSS file just before the script element">
+<meta name="keywords" content="개발일지">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chaining">
-<meta property="og:url" content="http://diaJavascript.github.io/2017/12/16/Javscript/Chaining/index.html">
+<meta property="og:title" content="Chap03. 개발일지 - preload">
+<meta property="og:url" content="http://diaJavascript.github.io/2017/12/22/개발일지/Chap04/index.html">
 <meta property="og:site_name" content="Writer, Javascript Blog">
-<meta property="og:description" content="정리할예정.참고 :http://blog.saltfactory.net/javascript-method-chaining-pattern/">
+<meta property="og:description" content="관련문서 : http://zuu.kr/jank 웹폰트 관련 문서를 보다 preload에 대한 정리가 있으면 좋을 것 같아서 남긴다 :^) Function API12345678&amp;lt;head&amp;gt;...&amp;lt;script id=&amp;quot;loadcss&amp;quot;&amp;gt;  // load a CSS file just before the script element">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-12-15T07:12:16.951Z">
+<meta property="og:updated_time" content="2017-12-21T10:24:54.709Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chaining">
-<meta name="twitter:description" content="정리할예정.참고 :http://blog.saltfactory.net/javascript-method-chaining-pattern/">
+<meta name="twitter:title" content="Chap03. 개발일지 - preload">
+<meta name="twitter:description" content="관련문서 : http://zuu.kr/jank 웹폰트 관련 문서를 보다 preload에 대한 정리가 있으면 좋을 것 같아서 남긴다 :^) Function API12345678&amp;lt;head&amp;gt;...&amp;lt;script id=&amp;quot;loadcss&amp;quot;&amp;gt;  // load a CSS file just before the script element">
     
 
     
@@ -129,18 +129,18 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Javascript/">Javascript</a>
+    <a class="page-title-link" href="/categories/개발일지/">개발일지</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="default-Javscript/Chaining" class="article article-single article-type-default" itemscope itemprop="blogPost">
+                            <article id="default-개발일지/Chap04" class="article article-single article-type-default" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Chaining
+        Chap03. 개발일지 - preload
         </h1>
     
 
@@ -150,22 +150,25 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/12/16/Javscript/Chaining/" class="article-date">
-            <time datetime="2017-12-15T15:00:00.000Z" itemprop="datePublished">2017-12-16</time>
+        <a href="/2017/12/22/개발일지/Chap04/" class="article-date">
+            <time datetime="2017-12-21T15:00:00.000Z" itemprop="datePublished">2017-12-22</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Javascript/">Javascript</a>
+        <a class="tag-link" href="/tags/개발일지/">개발일지</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>정리할예정.<br>참고 :<br><a href="http://blog.saltfactory.net/javascript-method-chaining-pattern/" target="_blank" rel="external">http://blog.saltfactory.net/javascript-method-chaining-pattern/</a></p>
+            <p>관련문서 : <a href="http://zuu.kr/jank" target="_blank" rel="external">http://zuu.kr/jank</a></p>
+<p>웹폰트 관련 문서를 보다 <strong>preload</strong>에 대한 정리가 있으면 좋을 것 같아서 남긴다 :^)</p>
+<h2 id="Function-API"><a href="#Function-API" class="headerlink" title="Function API"></a>Function API</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">...</div><div class="line">&lt;script id=&quot;loadcss&quot;&gt;</div><div class="line">  // load a CSS file just before the script element containing this code</div><div class="line">  loadCSS( &quot;path/to/mystylesheet.css&quot;, document.getElementById(&quot;loadcss&quot;) );</div><div class="line">&lt;/script&gt;</div><div class="line">...</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;preload&quot; href=&quot;path/to/mystylesheet.css&quot; as=&quot;style&quot; onload=&quot;this.onload=null;this.rel=&apos;stylesheet&apos;&quot;&gt;</div><div class="line">&lt;noscript&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/mystylesheet.css&quot;&gt;&lt;/noscript&gt;</div></pre></td></tr></table></figure>
 
         </div>
         <footer class="article-footer">
@@ -173,7 +176,7 @@
 
 
 
-    <a data-url="http://diaJavascript.github.io/2017/12/16/Javscript/Chaining/" data-id="cjb7kq4ue0000xkon11juk0j6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://diaJavascript.github.io/2017/12/22/개발일지/Chap04/" data-id="cjbgcbzuv0000gkon7staslfw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -278,20 +281,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2017/12/16/Javscript/This, Call, Apply, Bind/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            This, Call, Apply, Bind
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/12/15/Web/SVGIcon/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/12/21/Javscript/qa/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">SVG Icon</p>
+        <p class="article-nav-title">Javascript 면접질문</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -439,7 +432,7 @@
     var disqus_shortname = 'lee-hyunah';
     
     
-    var disqus_url = 'http://diaJavascript.github.io/2017/12/16/Javscript/Chaining/';
+    var disqus_url = 'http://diaJavascript.github.io/2017/12/22/개발일지/Chap04/';
     
     (function() {
     var dsq = document.createElement('script');
