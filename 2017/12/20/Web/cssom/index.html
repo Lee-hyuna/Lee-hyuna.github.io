@@ -3,20 +3,26 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Category: Javascript | Writer, Javascript Blog</title>
+    <title>CSSOM (CSS Object module) | Writer, Javascript Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="Dia&apos;s Javascript blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Writer, Javascript Blog">
-<meta property="og:url" content="http://diaJavascript.github.io/categories/Javascript/index.html">
+        <meta name="keywords" content="web,css,cssom" />
+    
+    <meta name="description" content="CSSOM*출처 : https://varvy.com/performance/cssom.html해당 문서를 번역했습니다. What is CSSOM?CSS object model이라는 뜻. 이는 기본적인 웹페이지에서의 CSS “map”이다DOM과 비슷하지만, HTML보다는 CSS에 가까우며 DOM과 결합된 CSSOM은 브라우저에서 웹페이지를 표하는데 사용됨 CS">
+<meta name="keywords" content="web,css,cssom">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSSOM (CSS Object module)">
+<meta property="og:url" content="http://diaJavascript.github.io/2017/12/20/Web/cssom/index.html">
 <meta property="og:site_name" content="Writer, Javascript Blog">
-<meta property="og:description" content="Dia&apos;s Javascript blog">
+<meta property="og:description" content="CSSOM*출처 : https://varvy.com/performance/cssom.html해당 문서를 번역했습니다. What is CSSOM?CSS object model이라는 뜻. 이는 기본적인 웹페이지에서의 CSS “map”이다DOM과 비슷하지만, HTML보다는 CSS에 가까우며 DOM과 결합된 CSSOM은 브라우저에서 웹페이지를 표하는데 사용됨 CS">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://diajavascript.github.io/images/cssom.png">
+<meta property="og:updated_time" content="2017-12-21T10:16:03.388Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Writer, Javascript Blog">
-<meta name="twitter:description" content="Dia&apos;s Javascript blog">
+<meta name="twitter:title" content="CSSOM (CSS Object module)">
+<meta name="twitter:description" content="CSSOM*출처 : https://varvy.com/performance/cssom.html해당 문서를 번역했습니다. What is CSSOM?CSS object model이라는 뜻. 이는 기본적인 웹페이지에서의 CSS “map”이다DOM과 비슷하지만, HTML보다는 CSS에 가까우며 DOM과 결합된 CSSOM은 브라우저에서 웹페이지를 표하는데 사용됨 CS">
+<meta name="twitter:image" content="http://diajavascript.github.io/images/cssom.png">
     
 
     
@@ -125,123 +131,127 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-folder-open"></i>Category: <em class="page-title-link">Javascript</em>
+    <a class="page-title-link" href="/categories/Web/">Web</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="default-Web/cssom" class="article article-single article-type-default" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
-            </div>
-            <div class="date"><time datetime="2017-12-20T15:00:00.000Z" itemprop="datePublished">2017-12-21</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2017/12/21/Javscript/qa/">Javascript 면접질문</a>
+        CSSOM (CSS Object module)
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/12/20/Web/cssom/" class="article-date">
+            <time datetime="2017-12-19T15:00:00.000Z" itemprop="datePublished">2017-12-20</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/css/">css</a>, <a class="tag-link" href="/tags/cssom/">cssom</a>, <a class="tag-link" href="/tags/web/">web</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="CSSOM"><a href="#CSSOM" class="headerlink" title="CSSOM"></a>CSSOM</h2><p>*출처 : <a href="https://varvy.com/performance/cssom.html" target="_blank" rel="external">https://varvy.com/performance/cssom.html</a><br>해당 문서를 번역했습니다.</p>
+<h3 id="What-is-CSSOM"><a href="#What-is-CSSOM" class="headerlink" title="What is CSSOM?"></a>What is CSSOM?</h3><p>CSS object model이라는 뜻. 이는 기본적인 웹페이지에서의 CSS “map”이다<br>DOM과 비슷하지만, HTML보다는 CSS에 가까우며 DOM과 결합된 CSSOM은 브라우저에서 웹페이지를 표하는데 사용됨</p>
+<p>CSSOM은 페이지 렌더링에 매우 중요한 요소이며, 중요한 렌더링 경로의 핵심부분이며 웹 성능(웹페이지 로딩속도) 최적화의 중요한 요소로 작용된다.</p>
+<p><img src="/images/cssom.png" alt=""></p>
+<h5 id="규칙적인-페이지-맵핑"><a href="#규칙적인-페이지-맵핑" class="headerlink" title="규칙적인 페이지 맵핑"></a>규칙적인 페이지 맵핑</h5><p>더 정확히 말하면, CSSOM은 토큰을 식별하고 트리 구조에 연결된 노드로 변환합니다. 관련된 페이지의 모든 노드에 대한 전체 맵의 전체 맵은 CSS객체 모델이 될 것이다.</p>
+
+        </div>
+        <footer class="article-footer">
             
-출처 : https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
-번역본
 
-자바스크립트 앱 개발자에게 있어 중요한 두 가지 프로그래밍 패러다임에 대해 말해볼 수 있는가?자바스크립트는 OOP(Object-Oriente
-        </p>
+
+
+    <a data-url="http://diaJavascript.github.io/2017/12/20/Web/cssom/" data-id="cjbeouh1g0000ztonbm3o1c8r" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
+    <section id="comments">
     
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
         
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
-            </div>
-            <div class="date"><time datetime="2017-12-15T15:00:00.000Z" itemprop="datePublished">2017-12-16</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/12/16/Javscript/This, Call, Apply, Bind/">This, Call, Apply, Bind</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            정리할예정.참고 :
-
-http://dailyjs.com/2012/06/18/js101-this/
-http://dailyjs.com/2012/06/25/this-binding/
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
-http://
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
     
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
-            </div>
-            <div class="date"><time datetime="2017-12-15T15:00:00.000Z" itemprop="datePublished">2017-12-16</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/12/16/Javscript/Chaining/">Chaining</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            정리할예정.참고 :http://blog.saltfactory.net/javascript-method-chaining-pattern/
-
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
-
-
+    </section>
 
 
                         </div>
@@ -270,6 +280,29 @@ http://
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/12/21/Javscript/qa/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Javascript 면접질문
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/12/16/Javscript/This, Call, Apply, Bind/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">This, Call, Apply, Bind</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -412,11 +445,13 @@ http://
     var disqus_shortname = 'lee-hyunah';
     
     
+    var disqus_url = 'http://diaJavascript.github.io/2017/12/20/Web/cssom/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
