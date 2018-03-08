@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Javascript 면접질문02 | Writer, Javascript Blog</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="web,javascript" />
+    
+    <meta name="description" content="개인적인 용도로 보관하기 위해 리포스팅합니다 출처 Front-end-Developer-interview-questions프론트엔드 면접 문제 은행이 파일에는 잠재적인 프론트엔드 개발자 후보를 선정할 때 사용할 수 있는 여러 가지 면접 질문들이 있습니다. 후보자에게 모든 문제를 사용하는 것은 많은 시간이 소요되기 때문에 추천하지 않습니다. 대신, 여러분이 요">
+<meta name="keywords" content="web,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript 면접질문02">
+<meta property="og:url" content="http://diaJavascript.github.io/2018/03/09/Javscript/면접질문02/index.html">
+<meta property="og:site_name" content="Writer, Javascript Blog">
+<meta property="og:description" content="개인적인 용도로 보관하기 위해 리포스팅합니다 출처 Front-end-Developer-interview-questions프론트엔드 면접 문제 은행이 파일에는 잠재적인 프론트엔드 개발자 후보를 선정할 때 사용할 수 있는 여러 가지 면접 질문들이 있습니다. 후보자에게 모든 문제를 사용하는 것은 많은 시간이 소요되기 때문에 추천하지 않습니다. 대신, 여러분이 요">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-03-08T09:54:17.471Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript 면접질문02">
+<meta name="twitter:description" content="개인적인 용도로 보관하기 위해 리포스팅합니다 출처 Front-end-Developer-interview-questions프론트엔드 면접 문제 은행이 파일에는 잠재적인 프론트엔드 개발자 후보를 선정할 때 사용할 수 있는 여러 가지 면접 질문들이 있습니다. 후보자에게 모든 문제를 사용하는 것은 많은 시간이 소요되기 때문에 추천하지 않습니다. 대신, 여러분이 요">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/logo.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Javascript/">Javascript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Web/">Web</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/개발일지/">개발일지</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Javascript/">Javascript</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="default-Javscript/면접질문02" class="article article-single article-type-default" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Javascript 면접질문02
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/03/09/Javscript/면접질문02/" class="article-date">
+            <time datetime="2018-03-08T15:00:00.000Z" itemprop="datePublished">2018-03-09</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/javascript/">javascript</a>, <a class="tag-link" href="/tags/web/">web</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><strong>개인적인 용도로 보관하기 위해 리포스팅합니다</strong></p>
+<h3 id="출처-Front-end-Developer-interview-questions"><a href="#출처-Front-end-Developer-interview-questions" class="headerlink" title="출처 Front-end-Developer-interview-questions"></a>출처 <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Korean#CSS-%EA%B4%80%EB%A0%A8-%EC%A7%88%EB%AC%B8" target="_blank" rel="external">Front-end-Developer-interview-questions</a></h3><h1 id="프론트엔드-면접-문제-은행"><a href="#프론트엔드-면접-문제-은행" class="headerlink" title="프론트엔드 면접 문제 은행"></a>프론트엔드 면접 문제 은행</h1><p>이 파일에는 잠재적인 프론트엔드 개발자 후보를 선정할 때 사용할 수 있는 여러 가지 면접 질문들이 있습니다. 후보자에게 모든 문제를 사용하는 것은 많은 시간이 소요되기 때문에 추천하지 않습니다. 대신, 여러분이 요구하는 주요 기술과 관련된 질문들을 몇 가지 선정해서 사용해보세요.</p>
+<p><strong>참고:</strong> 여기 있는 많은 질문은 자유롭게 추가/수정/삭제될 수 있고 정답보다 그 사람의 능력에 관해 이야기하는 흥미로는 토론을 끌어낼 수 있다는 것을 기억하세요.</p>
+<h2 id="목차"><a href="#목차" class="headerlink" title="목차"></a>목차</h2><ol>
+<li><a href="#일반적인-질문">일반적인 질문</a></li>
+<li><a href="#HTML-관련-질문">HTML 관련 질문</a></li>
+<li><a href="#CSS-관련-질문">CSS 관련 질문</a></li>
+<li><a href="#JS-관련-질문">JS 관련 질문</a></li>
+<li><a href="#테스트-관련-질문">테스트 관련 질문</a></li>
+<li><a href="#성능-관련-질문">성능 관련 질문</a></li>
+<li><a href="#코딩-관련-질문">코딩 관련 질문</a></li>
+</ol>
+<h2 id="함께하기"><a href="#함께하기" class="headerlink" title="함께하기"></a>함께하기</h2><ol>
+<li><a href="#함께하는-분들">함께하는 분들</a></li>
+<li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md" target="_blank" rel="external">함께하는 방법</a></li>
+<li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md" target="_blank" rel="external">라이선스</a></li>
+</ol>
+<h4 id="일반적인-질문"><a href="#일반적인-질문" class="headerlink" title="일반적인 질문:"></a>일반적인 질문:</h4><ul>
+<li>어제/이번 주에 무엇을 공부하셨나요?</li>
+<li>코딩을 할 때 당신을 들뜨게 하거나 흥미를 끄는 것들은 무엇은 가요?</li>
+<li>최근에 당신이 경험한 기술적인 문제는 무엇이고 그것을 어떻게 해결했나요?</li>
+<li>웹 애플리케이션이나 사이트를 만들 때 고려해야 할 UI, Security, Performance, SEO, Maintainability에 대해서 설명해주세요.</li>
+<li>선호하는 개발 환경에 대해 자유롭게 이야기해 주세요.</li>
+<li>버전 관리 시스템은 어떤 것들을 사용해보셨습니까?</li>
+<li>당신이 웹 페이지를 만들 때의 과정을 설명해주실 수 있을까요?</li>
+<li>당신에게 5가지 다른 stylesheet가 있습니다. 어떤 방법으로 사이트에 제공하는 게 가장 효과적일까요?</li>
+<li>점진적 향상법(progressive enhancement)과 우아한 성능저하법(graceful degradation)의 차이를 설명하실 수 있습니까?</li>
+<li>웹사이트에서 assets/resources를 최적화하는 방법에 관해 설명해주세요.</li>
+<li>브라우저가 한 번에 1개의 도메인에서 내려받는 자원은 몇 개인가요?<ul>
+<li>예외에는 어떤 것들이 있나요?</li>
+</ul>
+</li>
+<li>페이지 로드 시간을 줄이는 세 가지 방법에 관해서 이야기 해 보세요.</li>
+<li>당신이 프로젝트에 합류했습니다. 근데 그들은 Tab을 이용하고, 당신은 Sapce를 사용했습니다. 어떻게 하실 건가요?</li>
+<li>간단한 Slideshow 페이지를 만드는 방법에 관해서 이야기해 보세요.</li>
+<li>만약 당신이 올해 기술적 책임자가 되었다면 무엇을 먼저 하시겠습니까?</li>
+<li>표준의 중요성에 관해 설명해주세요.</li>
+<li>Flash of Unstyled Content에 관해 설명해주세요. 또 FOUC를 피하기 위해선 어떻게 해야 하나요?</li>
+<li>ARIA와 screenreader에 대해 설명해주세요. 또 접근성을 지원하는 웹사이트를 어떻게 만드는지에 대해도 설명해주세요.</li>
+<li>CSS 애니메이션과 JavaScript 애니메이션의 차이점에 관해 설명해주세요.</li>
+<li>CORS는 무엇의 약자이고 어떤 문제에 대해서 언급하는 것인가요?</li>
+</ul>
+<h4 id="HTML-관련-질문"><a href="#HTML-관련-질문" class="headerlink" title="HTML 관련 질문:"></a>HTML 관련 질문:</h4><ul>
+<li><code>doctype</code>이 무엇을 하는 것인가요?</li>
+<li>표준모드(standards mode)와 쿽스모드(quirks mode)의 다른 점은 무엇인가요?</li>
+<li>XML과 XHTML의 다른 점은 무엇인가요</li>
+<li>XHTML을 이용한 페이지의 한계점은 무엇이 있나요?</li>
+<li><code>application/xhtml+xml</code>으로 지정한 페이지에 어떠한 문제가 있나요?</li>
+<li>다국어가 포함된 페이지는 어떤 방식으로 제공하나요?</li>
+<li>다국어 페이지를 제공하는 여러 방법에 관해 설명해주세요.</li>
+<li><code>data-</code>속성은 무엇을 하는 것인가요? 사용했을 때 이점은 무엇인가요?</li>
+<li>HTML5를 오픈 웹 플랫폼(open web platform)으로 생각해본다면, 어떤 것들로 구성돼 있을까요?</li>
+<li><code>쿠키(Cookies)</code>와 <code>세션저장소(sessionStorage)</code>와 <code>로컬저장소(localStorage)</code>의 차이점을 설명해주세요.</li>
+<li><code>&lt;script&gt;</code>, <code>&lt;script async&gt;</code>와 <code>&lt;script defer&gt;</code>의 차이점에 관해 설명해주세요.</li>
+<li>CSS<code>&lt;link&gt;</code>를 <code>&lt;head&gt;&lt;/head&gt;</code>사이에 쓰는 것과 JS<code>&lt;script&gt;</code>를 <code>&lt;body&gt;&lt;/body&gt;</code>뒤에 사용하는 것은 좋은 사용법일까요? 어디에 배치하는 게 좋을까요?</li>
+<li>Progressive rendering이란 무엇인가요?</li>
+<li>이미지 태그에 <code>srcset</code> 속성을 사용하는 이유는 무엇인가요? 브라우저가 이 속성을 가진 콘텐츠를 평가할 때 사용하는 과정을 설명해보세요.</li>
+<li>HTML templating language를 사용해 본 경험이 있나요?</li>
+</ul>
+<h4 id="CSS-관련-질문"><a href="#CSS-관련-질문" class="headerlink" title="CSS 관련 질문:"></a>CSS 관련 질문:</h4><ul>
+<li>class와 id의 차이점에 관해서 설명해주세요.</li>
+<li>“reset” CSS가 무엇인지, 어떻게 유용한지 설명해주세요.</li>
+<li>Floats가 어떻게 동작하는지 설명해주세요.</li>
+<li>z-index에 관해 설명해주세요.</li>
+<li>BFC(Block Formatting Context)에 관해 설명해주세요</li>
+<li>클리어링(Clearing) 기술에는 어떤 것들이 있으며, 어떨 때 어떻게 사용하는 것이 적절한지 설명하세요.</li>
+<li>CSS 스프라이트(CSS Sprites)를 설명하고, 페이지나 사이트를 어떻게 향상하는지 설명하세요.</li>
+<li>Image Replacement를 사용해야 할 때, 선호하는 기술과 언제 사용하는지를 설명해주세요.</li>
+<li>브라우저 스펙 차이에 따른 스타일링 이슈를 수정하기 위해서 어떻게 접근하나요?</li>
+<li>기능이 제약된 브라우저를 위해서 어떤 방식으로 페이지를 만드나요?<ul>
+<li>어떠한 기술과 절차를 거치는지 설명하세요.</li>
+</ul>
+</li>
+<li>시각적으로 보이지 않고 스크린 리더에서만 가능하게 하는 방법에 관해 설명해주세요.</li>
+<li>그리드 시스템(Grid system)을 사용한 적이 있나요? 있다면 어떠한 것을 선호하나요?</li>
+<li>미디어 쿼리(media queries)를 사용한 적이 있나요? 혹은 모바일에 맞는 layout과 CSS를 사용한 적이 있나요?</li>
+<li>SVG를 스타일링하는데 익숙하신가요?</li>
+<li>인쇄하기 위해 웹페이지를 어떻게 최적화 하나요?</li>
+<li>효율적인 CSS를 작성하기 위한 “비법(gotchas)”은 어떤 게 있나요?</li>
+<li>CSS 전처리(CSS preprocessors)를 사용해보셨나요?<ul>
+<li>그렇다면, 사용 경험에 기반을 둬 좋았던 점과 나빴던 점을 설명해주세요.</li>
+</ul>
+</li>
+<li>페이지에서 표준 폰트가 아닌 폰트 디자인을 사용할 때 어떤 방식으로 처리하시나요? (웹폰트를 제외하고)</li>
+<li>CSS Selector가 어떠한 원리로 동작하는지 설명해주세요.</li>
+<li>pseudo-elements에 관해서 설명하고 어디에서 사용되는지 이야기해보세요.</li>
+<li>box model에 관해 설명하고 브라우저에서 어떻게 동작하는지 설명해주세요.</li>
+<li><code>* { box-sizing: border-box; }</code>은 무엇이고 사용했을때 이점은 무엇인가요?</li>
+<li>기억나는 display 속성에 대한 값들을 나열해보세요.</li>
+<li>inline과 inline-block의 차이점은 무엇인가요?</li>
+<li>요소를 배치하는 방법(relative, fixed, absolute, static) 간의 차이는 무엇인가요?</li>
+<li>CSS에서 ‘C’는 Cascading을 의미합니다. Cascading에 관해서 설명해주세요. 또 cascading system의 장점은 무엇인가요?</li>
+<li>CSS framework를 사용해본 적이 있으신가요? 실무에서 사용해보았다면 어떤 이점이 있었나요?</li>
+<li>새로운 CSS Flexbox 혹은 Grid 스펙을 사용해 보신 적 있나요?</li>
+<li>반응형(Responsive) 디자인은 적응형(Adaptive) 디자인과 어떤 차이점이 있나요?</li>
+<li>레티나 그래픽 환경에서 작업해 보신 적이 있나요? 하셨다면 어떤 기술을 사용하셨나요?</li>
+<li><em>절대 좌표</em>대신 <code>translate()</code> 혹은 반대로 사용하는 이유가 있나요? 있다면 이유에 관해서 설명해주세요.</li>
+</ul>
+<h4 id="JS-관련-질문"><a href="#JS-관련-질문" class="headerlink" title="JS 관련 질문:"></a>JS 관련 질문:</h4><ul>
+<li>event delegation에 관해 설명해주세요.</li>
+<li><code>this</code>는 JavaScript에서 어떻게 작동하는지 설명해주세요.</li>
+<li>prototype 기반 상속은 어떻게 하는지 설명해주세요.</li>
+<li>AMD와 CommonJS는 무엇이고, 이것들에 대해 어떻게 생각하시나요?</li>
+<li>다음 코드가 즉시 호출 함수 표현식(IIFE)로 동작하지 않는 이유에 관해서 설명해보세요: <code>function foo(){ }();</code>.<ul>
+<li>IIFE로 만들기 위해서는 어떻게 해야 하나요?</li>
+</ul>
+</li>
+<li><code>null</code>과 <code>unedefined</code> 그리고 <code>undeclared</code>의 차이점은 무엇인가요?<ul>
+<li>두개를 구분하기 위해서는 어떻게 하면 될까요?</li>
+</ul>
+</li>
+<li>클로져(Closure)는 무엇이며, 어떻게/왜 사용하는지 설명해주세요.<ul>
+<li>클로져를 만들 때 선호하는 패턴은 무엇인가요? argyle (IIFEs에만 적용할 수 있다)</li>
+</ul>
+</li>
+<li>익명함수(anonymous functions)는 주로 어떤 상황에서 사용하나요?</li>
+<li>당신의 코드를 어떻게 구성하는지? (모듈 패턴, 전통적 상속)</li>
+<li>호스트 객체(Host Objects)와 네이티브 객체(Native Objects)의 차이점은 무엇인가요?</li>
+<li>다음 코드의 차이점은 무엇인가요?</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;&#125; <span class="keyword">var</span> person = Person() <span class="keyword">var</span> person = <span class="keyword">new</span> Person()</div></pre></td></tr></table></figure>
+<ul>
+<li><code>.call</code>과 <code>.apply</code>의 차이점은 무엇인가요?</li>
+<li><code>Function.prototype.bind</code>을 설명하세요.</li>
+<li><code>document.write()</code>는 언제 사용하나요?</li>
+<li>UA 문자열을 이용하여 기능 검출(feature detection)과 기능 추론(feature inference)의 차이점을 설명하세요.</li>
+<li>AJAX에 관해 가능한 한 자세히 설명하세요.</li>
+<li>AJAX를 사용했을 때의 장단점에 대해 설명해주세요.</li>
+<li>JSON이 어떻게 동작 되는지 설명하세요. (그리고 AJAX와 어떻게 다른지 설명하세요.)</li>
+<li>기존에 JavaScript 템플릿을 사용한 적이 있나요? 만약에 있다면, 어떠한 방식으로 사용했는지 말씀해주세요.</li>
+<li>“호이스팅(Hoisting)”에 대해서 설명하세요.</li>
+<li>이벤트 버블링(Event Bubbling)에 대해서 설명하세요.</li>
+<li>“속성(Attribute)”와 “요소(property)”의 차이가 무엇인가요?</li>
+<li>내장된 JavaScript 객체를 확장하는 것이 좋지 않은 이유는 무엇인가요?</li>
+<li>docuemnt load event와 DOMContentLoaded event의 차이점은 무엇인가요?</li>
+<li><code>==</code>와 <code>===</code>의 차이점은 무엇인가요?</li>
+<li>JavaScript의 “동일출처정책(the same-origin policy)”에 대해서 설명하세요.</li>
+<li>다음 코드를 동작하게 만드세요.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duplicate([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]); <span class="comment">// [1,2,3,4,5,1,2,3,4,5]</span></div></pre></td></tr></table></figure>
+<ul>
+<li>삼항식(Ternary statement)을 사용하는 이유는 무엇이고, 그것을 표현하기 위한 연산자 단어는 무엇인가요?</li>
+<li><code>use strict;</code>은 무엇이고, 사용했을 때 장단점에 관해서 설명해주세요.</li>
+<li>100번 반복되는 반복문이 있습니다. 3의 배수일 때는 <code>fizz</code>, 5의 배수일 때는 <code>buzz</code>, 3과 5의 공배수일 때는 <code>fizzbuzz</code>가 출력되는 코드를 작성해보세요.</li>
+<li>전역 scope를 사용했을 때 장단점에 관해 설명해주세요.</li>
+<li>때때로 <code>load</code> event를 사용하는 이유에 관해 설명해주세요. 또 단점이 있다면 대안에 대해서도 설명해주세요.</li>
+<li>SPA에서 SEO에 유리하도록 만들기 위한 방법에 대해 설명해주세요.</li>
+<li>Promise를 사용해 본 경험이 있나요?</li>
+<li>Promise가 콜백 대비 장/단점은 무엇인지 설명해주세요.</li>
+<li>JavaScript의 작동방식의 장단점에 관해 설명해주세요.</li>
+<li>JavaScript를 디버깅할 때 사용하는 도구가 있으면 설명해주세요.</li>
+<li>객체 안의 속성과 배열의 아이템을 순회할 때 사용하는 문법에 관해 설명해주세요.</li>
+<li>mutable object와 immutable object에 관해 설명해주세요.<ul>
+<li>JavaScript에서 immutable 객체의 예를 들어보세요.</li>
+<li>immutability의 장/단점은 무엇인가요?</li>
+<li>자신의 코드에서 불변성(immutability를) 어떻게 달성할 수 있나요?</li>
+</ul>
+</li>
+<li>동기방식과 비동기 방식 함수의 차이에 관해서 설명해주세요.</li>
+<li>event loop이란 무엇인가요?<ul>
+<li>call stack과 task queue에 관해 설명해주세요.</li>
+</ul>
+</li>
+<li><code>function foo() {}</code>와 <code>var foo = function() {}</code>에서 foo 의 차이가 무엇인지 설명해보세요.</li>
+<li><code>let</code>, <code>var</code>, <code>const</code>의 차이점에 관해서 설명해주세요.</li>
+</ul>
+<h4 id="테스트-관련-질문들"><a href="#테스트-관련-질문들" class="headerlink" title="테스트 관련 질문들:"></a>테스트 관련 질문들:</h4><ul>
+<li>test code를 작성하면서 개발하는 방식의 장점과 단점에 대해 설명해주세요.</li>
+<li>test code를 테스트하는 툴을 사용해보신 경험이 있나요?</li>
+<li>유닛 테스트와 함수테스트의 차이점은 무엇인가요?</li>
+<li>code style linting tool을 사용했을때 장점은 무엇인가요?</li>
+</ul>
+<h4 id="성능-관련-질문들"><a href="#성능-관련-질문들" class="headerlink" title="성능 관련 질문들:"></a>성능 관련 질문들:</h4><ul>
+<li>성능관련 이슈들을 발견하기 위해서 사용하는 방법은 무엇인가요?</li>
+<li>웹사이트 scrolling 성능을 향상시키기 위한 몇가지 방법에 대해 설명해보세요.</li>
+<li>브라우저의 layout, painting, compositing에 대해 설명해보세요.</li>
+</ul>
+<h4 id="네트워크-질문들"><a href="#네트워크-질문들" class="headerlink" title="네트워크 질문들:"></a>네트워크 질문들:</h4><ul>
+<li>전통적으로, 웹사이트의 assets을 여러 도메인으로 서빙했을 때 장점은 무엇인가요?</li>
+<li>URL로 접속했을 때 어떤 플로우로 화면에 웹사이트가 그려지는지 네트워크 관점에서 설명해주세요.</li>
+<li>Long-Polling과 Websocket, Server-Sent Event에 대해 설명해주세요.</li>
+<li>다음 request header들에 대해 설명해주세요.<ul>
+<li>Diff. between Expires, Date, Age and If-Modified-…</li>
+<li>Do Not Track</li>
+<li>Cache-Control</li>
+<li>Transfer-Encoding</li>
+<li>ETag</li>
+<li>X-Frame-Options</li>
+</ul>
+</li>
+<li>HTTP와 HTTPS에 대해 설명해주세요.</li>
+<li>HTTP Method들에 대해 설명해주세요.</li>
+</ul>
+<h4 id="코딩-질문"><a href="#코딩-질문" class="headerlink" title="코딩 질문:"></a>코딩 질문:</h4><p><em>질문: <code>foo</code>의 값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="number">10</span> + <span class="string">'20'</span>;</div></pre></td></tr></table></figure></p>
+<p><em>질문: 아래 코드의 결과값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="number">0.1</span> + <span class="number">0.2</span> == <span class="number">0.3</span>);</div></pre></td></tr></table></figure></p>
+<p><em>질문: 아래 코드가 동작하게 하기 위해선 어떻게 해야할까요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">add(<span class="number">2</span>, <span class="number">5</span>); <span class="comment">// 7</span></div><div class="line">add(<span class="number">2</span>)(<span class="number">5</span>); <span class="comment">// 7</span></div></pre></td></tr></table></figure></p>
+<p><em>질문: 아래 구문의 반환값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"i'm a lasagna hog"</span>.split(<span class="string">""</span>).reverse().join(<span class="string">""</span>);</div></pre></td></tr></table></figure></p>
+<p><em>Question: What is the value of <code>window.foo</code>?</em><br><em>질문: <code>window.foo</code>의 값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">( <span class="built_in">window</span>.foo || ( <span class="built_in">window</span>.foo = <span class="string">"bar"</span> ) );</div></pre></td></tr></table></figure></p>
+<p><em>질문: 아래 두 alert의 결과값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="string">"Hello"</span>;</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> bar = <span class="string">" World"</span>;</div><div class="line">  alert(foo + bar);</div><div class="line">&#125;)();</div><div class="line">alert(foo + bar);</div></pre></td></tr></table></figure></p>
+<p><em>질문: <code>foo.length</code>의 값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = [];</div><div class="line">foo.push(<span class="number">1</span>);</div><div class="line">foo.push(<span class="number">2</span>);</div></pre></td></tr></table></figure></p>
+<p><em>질문: <code>foo.x</code>의 값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = &#123;<span class="attr">n</span>: <span class="number">1</span>&#125;;</div><div class="line"><span class="keyword">var</span> bar = foo;</div><div class="line">foo.x = foo = &#123;<span class="attr">n</span>: <span class="number">2</span>&#125;;</div></pre></td></tr></table></figure></p>
+<p><em>질문: 아래 코드의 출력값은 무엇인가요?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'one'</span>);</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'two'</span>);</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'three'</span>);</div></pre></td></tr></table></figure></p>
+<h4 id="그-외-흥미로운-질문들"><a href="#그-외-흥미로운-질문들" class="headerlink" title="그 외 흥미로운 질문들:"></a>그 외 흥미로운 질문들:</h4><ul>
+<li>최근에 수행했던 흥미로운 프로젝트는 무엇인가요?</li>
+<li>사용하는 개발 도구에서 마음에 드는 부분은 무엇인가요?</li>
+<li>프론트엔드 커뮤니티에서 당신에게 영감을 준 사람이 있다면 누구인가요?</li>
+<li>애완동물 관련 프로젝트를 해 보았나요? 해보았다면 어떤 종류의 프로젝트인가요?</li>
+<li>IE에서 가장 좋아하는 기능은 무엇인가요?</li>
+<li>어떤 커피를 좋아하시나요?</li>
+</ul>
+<h4 id="함께하는-분들"><a href="#함께하는-분들" class="headerlink" title="함께하는 분들:"></a>함께하는 분들:</h4><p>이 문서는 2009년에 다음에 언급된 분들과의 협업으로 시작했습니다.<br> <a href="https://twitter.com/paul_irish" target="_blank" rel="external">@paul_irish</a> <a href="https://twitter.com/bentruyman" target="_blank" rel="external">@bentruyman</a> <a href="https://twitter.com/cowboy" target="_blank" rel="external">@cowboy</a> <a href="https://twitter.com/ajpiano" target="_blank" rel="external">@ajpiano</a>  <a href="https://twitter.com/slexaxton" target="_blank" rel="external">@SlexAxton</a> <a href="https://twitter.com/boazsender" target="_blank" rel="external">@boazsender</a> <a href="https://twitter.com/miketaylr" target="_blank" rel="external">@miketaylr</a> <a href="https://twitter.com/vladikoff" target="_blank" rel="external">@vladikoff</a> <a href="https://twitter.com/gf3" target="_blank" rel="external">@gf3</a> <a href="https://twitter.com/jon_neal" target="_blank" rel="external">@jon_neal</a> <a href="https://twitter.com/sambreed" target="_blank" rel="external">@sambreed</a> <a href="https://twitter.com/iansym" target="_blank" rel="external">@iansym</a></p>
+<p>현재는 <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors" target="_blank" rel="external">100이 넘는 개발자들</a>이 함께하고 있습니다.</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://diaJavascript.github.io/2018/03/09/Javscript/면접질문02/" data-id="cjeicnwhs00016donu1s922lc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/hyuna.lee.754?ref=bookmarks" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/Lee-hyuna/diaJavascript" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/03/12/개발일지/Chpa07/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Chap07. 개발일지 - CSS/calc
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/03/09/개발일지/Chap06/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Chap06. 개발일지 - CSS/Clip</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/개발일지/">개발일지</a></p>
+                            <p class="item-title"><a href="/2018/03/12/개발일지/Chpa07/" class="title">Chap07. 개발일지 - CSS/calc</a></p>
+                            <p class="item-date"><time datetime="2018-03-11T15:00:00.000Z" itemprop="datePublished">2018-03-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/2018/03/09/Javscript/면접질문02/" class="title">Javascript 면접질문02</a></p>
+                            <p class="item-date"><time datetime="2018-03-08T15:00:00.000Z" itemprop="datePublished">2018-03-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/개발일지/">개발일지</a></p>
+                            <p class="item-title"><a href="/2018/03/09/개발일지/Chap06/" class="title">Chap06. 개발일지 - CSS/Clip</a></p>
+                            <p class="item-date"><time datetime="2018-03-08T15:00:00.000Z" itemprop="datePublished">2018-03-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Web/">Web</a></p>
+                            <p class="item-title"><a href="/2018/03/08/Web/Flexible Box Layout Module/" class="title">Flexible Box Layout Module</a></p>
+                            <p class="item-date"><time datetime="2018-03-07T15:00:00.000Z" itemprop="datePublished">2018-03-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/개발일지/">개발일지</a></p>
+                            <p class="item-title"><a href="/2018/01/25/개발일지/Chap05/" class="title">Chap05. 개발일지 - 클로저 기초예제</a></p>
+                            <p class="item-date"><time datetime="2018-01-24T15:00:00.000Z" itemprop="datePublished">2018-01-25</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web/">Web</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/개발일지/">개발일지</a><span class="category-list-count">7</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cssom/">cssom</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexbox/">flexbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/font/">font</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jade/">jade</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pug/">pug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webaccessibility/">webaccessibility</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webfont/">webfont</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webtrands/">webtrands</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/개발일지/">개발일지</a><span class="tag-list-count">7</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/cssom/" style="font-size: 15px;">cssom</a> <a href="/tags/flexbox/" style="font-size: 10px;">flexbox</a> <a href="/tags/font/" style="font-size: 10px;">font</a> <a href="/tags/jade/" style="font-size: 10px;">jade</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/pug/" style="font-size: 10px;">pug</a> <a href="/tags/web/" style="font-size: 20px;">web</a> <a href="/tags/webaccessibility/" style="font-size: 10px;">webaccessibility</a> <a href="/tags/webfont/" style="font-size: 10px;">webfont</a> <a href="/tags/webtrands/" style="font-size: 10px;">webtrands</a> <a href="/tags/개발일지/" style="font-size: 20px;">개발일지</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Dia</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'lee-hyunah';
+    
+    
+    var disqus_url = 'http://diaJavascript.github.io/2018/03/09/Javscript/면접질문02/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
