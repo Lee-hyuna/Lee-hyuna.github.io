@@ -3,24 +3,26 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Chap03. 개발일지 - backface-visibility | Writer, Javascript Blog</title>
+    <title>CSS 텍스트 줄바꿈 | Writer, Javascript Blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="개발일지" />
+        <meta name="keywords" content="CSS" />
     
-    <meta name="description" content="예전에 모웹 마크업작업에서 버튼을 2개 겹쳐놓고 애니메이션으로 전환하는 작업을 진행하다,특정 디바이스에서 버벅 거리는 현상이 있었다. 구글링한 결과 이변가시성에 대한 글이 있었는데, 참고하고자 남긴다 :^) backface-visibility 속성3D transform과 연관되어 있으며, 겹쳐졌을 경우 뒷면의 가시성을 결정하는 속성이다변형이 가해져 요소의">
-<meta name="keywords" content="개발일지">
+    <meta name="description" content=".article-entry img {margin:0 !important}   white-space공백 줄바꿈 문자 처리 방법  white-space: normal;기본값 여러칸의 공백이나 줄바꿈을 공백 1칸으로 인식한다. 지정된 넓이의 끝에서 자동 줄바꿈 한다   white-space: pre;띄워쓰기는 실제 입력한 칸대로, 줄바꿈도 엔터의 시점에서 그대">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chap03. 개발일지 - backface-visibility">
-<meta property="og:url" content="http://diaJavascript.github.io/2017/12/15/개발일지/Chap03/index.html">
+<meta property="og:title" content="CSS 텍스트 줄바꿈">
+<meta property="og:url" content="http://diaJavascript.github.io/2018/03/09/Web/텍스트줄바꿈_CSS/index.html">
 <meta property="og:site_name" content="Writer, Javascript Blog">
-<meta property="og:description" content="예전에 모웹 마크업작업에서 버튼을 2개 겹쳐놓고 애니메이션으로 전환하는 작업을 진행하다,특정 디바이스에서 버벅 거리는 현상이 있었다. 구글링한 결과 이변가시성에 대한 글이 있었는데, 참고하고자 남긴다 :^) backface-visibility 속성3D transform과 연관되어 있으며, 겹쳐졌을 경우 뒷면의 가시성을 결정하는 속성이다변형이 가해져 요소의">
+<meta property="og:description" content=".article-entry img {margin:0 !important}   white-space공백 줄바꿈 문자 처리 방법  white-space: normal;기본값 여러칸의 공백이나 줄바꿈을 공백 1칸으로 인식한다. 지정된 넓이의 끝에서 자동 줄바꿈 한다   white-space: pre;띄워쓰기는 실제 입력한 칸대로, 줄바꿈도 엔터의 시점에서 그대">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-12-15T07:56:59.456Z">
+<meta property="og:image" content="http://diajavascript.github.io/images/w1.jpg">
+<meta property="og:updated_time" content="2018-03-09T05:44:43.753Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chap03. 개발일지 - backface-visibility">
-<meta name="twitter:description" content="예전에 모웹 마크업작업에서 버튼을 2개 겹쳐놓고 애니메이션으로 전환하는 작업을 진행하다,특정 디바이스에서 버벅 거리는 현상이 있었다. 구글링한 결과 이변가시성에 대한 글이 있었는데, 참고하고자 남긴다 :^) backface-visibility 속성3D transform과 연관되어 있으며, 겹쳐졌을 경우 뒷면의 가시성을 결정하는 속성이다변형이 가해져 요소의">
+<meta name="twitter:title" content="CSS 텍스트 줄바꿈">
+<meta name="twitter:description" content=".article-entry img {margin:0 !important}   white-space공백 줄바꿈 문자 처리 방법  white-space: normal;기본값 여러칸의 공백이나 줄바꿈을 공백 1칸으로 인식한다. 지정된 넓이의 끝에서 자동 줄바꿈 한다   white-space: pre;띄워쓰기는 실제 입력한 칸대로, 줄바꿈도 엔터의 시점에서 그대">
+<meta name="twitter:image" content="http://diajavascript.github.io/images/w1.jpg">
     
 
     
@@ -129,18 +131,18 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/개발일지/">개발일지</a>
+    <a class="page-title-link" href="/categories/Web/">Web</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="default-개발일지/Chap03" class="article article-single article-type-default" itemscope itemprop="blogPost">
+                            <article id="default-Web/텍스트줄바꿈_CSS" class="article article-single article-type-default" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Chap03. 개발일지 - backface-visibility
+        CSS 텍스트 줄바꿈
         </h1>
     
 
@@ -150,55 +152,46 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/12/15/개발일지/Chap03/" class="article-date">
-            <time datetime="2017-12-14T15:00:00.000Z" itemprop="datePublished">2017-12-15</time>
+        <a href="/2018/03/09/Web/텍스트줄바꿈_CSS/" class="article-date">
+            <time datetime="2018-03-08T15:00:00.000Z" itemprop="datePublished">2018-03-09</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/개발일지/">개발일지</a>
+        <a class="tag-link" href="/tags/CSS/">CSS</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>예전에 모웹 마크업작업에서 버튼을 2개 겹쳐놓고 애니메이션으로 전환하는 작업을 진행하다,<br>특정 디바이스에서 버벅 거리는 현상이 있었다.</p>
-<p>구글링한 결과 <strong>이변가시성</strong>에 대한 글이 있었는데, 참고하고자 남긴다 :^)</p>
-<h2 id="backface-visibility-속성"><a href="#backface-visibility-속성" class="headerlink" title="backface-visibility 속성"></a>backface-visibility 속성</h2><p>3D transform과 연관되어 있으며, 겹쳐졌을 경우 뒷면의 가시성을 결정하는 속성이다<br>변형이 가해져 요소의 뒷면이 보여지게 될 때 번쩍거리는 효과를 숨기는 속성이다.</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span> &#123;</div><div class="line">  <span class="attribute">-webkit-backface-visibility</span>: hidden; <span class="comment">/* Chrome, Safari, Opera */</span> </div><div class="line">  <span class="attribute">backface-visibility</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">object.style.backfaceVisibility=<span class="string">"hidden"</span></div></pre></td></tr></table></figure>
-<p><code>backface-visibility</code><br><code>hidden</code> : 이면을 숨김<br><code>visible</code> : 기본값, 이면을 보여줌</p>
-<hr>
-<p><strong>codepen</strong></p>
-<p></p><p data-height="265" data-theme-id="0" data-slug-hash="qpdLqz" data-default-tab="css,result" data-user="lee-hyuna" data-embed-version="2" data-pen-title="qpdLqz" class="codepen">See the Pen <a href="https://codepen.io/lee-hyuna/pen/qpdLqz/" target="_blank" rel="external">qpdLqz</a> by lee-hyuna (<a href="https://codepen.io/lee-hyuna" target="_blank" rel="external">@lee-hyuna</a>) on <a href="https://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            <style>
+.article-entry img {margin:0 !important}
+</style>
 
-
-
-<h2 id="지원현황"><a href="#지원현황" class="headerlink" title="지원현황"></a>지원현황</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">IE</th>
-<th style="text-align:center">Firefox</th>
-<th style="text-align:center">Safari</th>
-<th style="text-align:center">Chrome</th>
-<th style="text-align:right">Opera</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">IE10+</td>
-<td style="text-align:center">지원</td>
-<td style="text-align:center">지원</td>
-<td style="text-align:center">지원</td>
-<td style="text-align:right">지원</td>
-</tr>
-</tbody>
-</table>
-<p>참고 : <a href="https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp" target="_blank" rel="external">https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp</a></p>
+<p><strong>white-space</strong><br>공백 줄바꿈 문자 처리 방법</p>
+<ul>
+<li>white-space: normal;<br>기본값 여러칸의 공백이나 줄바꿈을 공백 1칸으로 인식한다. 지정된 넓이의 끝에서 자동 줄바꿈 한다<br><img src="/images/w1.jpg" alt=""></li>
+</ul>
+<ul>
+<li>white-space: pre;<br>띄워쓰기는 실제 입력한 칸대로, 줄바꿈도 엔터의 시점에서 그대로 노출이 된다 넘어가는 부분은 강제줄바꿈이 안됨<br><img src="/images/w2.jpg" alt=""></li>
+</ul>
+<ul>
+<li>white-space: nowrap;<br>여러칸의 공백, 줄바꿈 모두 1칸으로 인식한다. 넓이를 지정하여도 자동으로 줄바꿈이 되지않게 강제로 개행을 막아준다<br><img src="/images/w3.jpg" alt=""></li>
+</ul>
+<p><br></p>
+<p><strong>word-break</strong><br>텍스트가 들어가는 블럭요소의 너비에 맞춰 줄바꿈하는 스타일시트</p>
+<ul>
+<li>word-break: normal;<br>기본값. 단어 단위로 끊어서 줄바꿈 함 (우측의 여백이 생기게됨)<br><img src="/images/w4.jpg" alt=""></li>
+</ul>
+<ul>
+<li>word-break: break-all;<br>글자단위로 줄바꿈을 함 (여백은 완벽하게 맞춰지지만, 단어의 중간에 블럭이됨)<br><img src="/images/w5.jpg" alt=""></li>
+</ul>
+<ul>
+<li>word-break: keep-all;<br>한글일 경우 띄어쓰기 기준으로 줄바꿈 해줌 (아시아계열만 지원, ie/파폭.5이상)</li>
+</ul>
 
         </div>
         <footer class="article-footer">
@@ -206,7 +199,7 @@
 
 
 
-    <a data-url="http://diaJavascript.github.io/2017/12/15/개발일지/Chap03/" data-id="cjcu6uwmo000uxbon7hb3n1wo" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://diaJavascript.github.io/2018/03/09/Web/텍스트줄바꿈_CSS/" data-id="cjejjdr4r0001acono7ln19on" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -311,20 +304,20 @@
         
 <nav id="article-nav">
     
-        <a href="/2017/12/15/개발일지/Chap02/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/03/09/개발일지/Chap06/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Chap02. 개발일지 - OpenType Variable Fonts
+            Chap06. 개발일지 - CSS/Clip
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2017/12/14/개발일지/Chap01/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/03/08/Web/Flexible Box Layout Module/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Chap01. 개발일지 - element size</p>
+        <p class="article-nav-title">Flexible Box Layout Module</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -472,7 +465,7 @@
     var disqus_shortname = 'lee-hyunah';
     
     
-    var disqus_url = 'http://diaJavascript.github.io/2017/12/15/개발일지/Chap03/';
+    var disqus_url = 'http://diaJavascript.github.io/2018/03/09/Web/텍스트줄바꿈_CSS/';
     
     (function() {
     var dsq = document.createElement('script');
